@@ -4,7 +4,7 @@
 
 ## 1. A Matemática do Preenchimento (Coordenadas Baricêntricas)
 
-Basicamente o que diferencia o meu código é que diferente da maioria dos outros que usaram while e eu fiz um for, bem como eu fiz funções ao invés de passar todos os valores sempre criando duas funções.
+Basicamente o que diferencia o meu código é que diferente da maioria dos outros que usaram while e eu fiz um for, bem como eu fiz funções ao invés de passar todos os valores sempre, criando duas funções separadas.
 
 ```python
 def point(alfa: float, p1: tuple[float, float], p2: tuple[float, float], p3: tuple[float, float]):
@@ -20,7 +20,7 @@ def pointBeta(alfa: float, beta: float, p1: tuple[float, float], p2: tuple[float
 
 A função `point` é uma parte da lógica, que no GeoGebra visto, faz o colorimento da linha entre um ponto e outro, inutilizado no código.
 
-Já função `pointBeta` é o coração dessa lógica. Ela recebe os três vértices do triângulo ($p_1, p_2, p_3$) e dois valores de controle ($alpha$ e $beta$, variando de 0 a 1):
+Já função `pointBeta` é o coração dessa lógica. Ela recebe os três vértices do triângulo ($p_1, p_2, p_3$) e dois valores de controle (alpha e beta, variando de 0 a 1):
 
 $$P = w_1 \cdot p_1 + w_2 \cdot p_2 + w_3 \cdot p_3$$
 
