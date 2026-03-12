@@ -2,7 +2,7 @@
 
 ---
 
-## 1. A Matemática do Preenchimento (Coordenadas Baricêntricas)
+## 1. Preenchimento
 
 Basicamente o que diferencia o meu código é que diferente da maioria dos outros que usaram while e eu fiz um for, bem como eu fiz funções ao invés de passar todos os valores sempre, criando duas funções separadas.
 
@@ -30,7 +30,7 @@ Os pesos do W foram definidos da seguinte forma:
 - **Peso do Ponto 2 ($w_2$):** $beta \cdot alpha$
 - **Peso do Ponto 3 ($w_3$):** $1 - beta$
 
-## 2. O Loop de Renderização e as Cores (`render`)
+## 2. O Loop (`render`)
 
 - **Interpolação de Cores:** Eu uso os mesmos passos calculados para a posição geométrica para definir a intensidade das cores RGB (Red, Green, Blue).
   - Nível de Vermelho = $w_1$
