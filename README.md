@@ -18,7 +18,7 @@ def pointBeta(alfa: float, beta: float, p1: tuple[float, float], p2: tuple[float
     return (x, y)
 ```
 
-A função `point` é uma parte da lógica, que no GeoGebra visto faz o colorimento da linha entre um ponto e outro, inutilizado no código.
+A função `point` é uma parte da lógica, que no GeoGebra visto, faz o colorimento da linha entre um ponto e outro, inutilizado no código.
 
 Já função `pointBeta` é o coração dessa lógica. Ela recebe os três vértices do triângulo ($p_1, p_2, p_3$) e dois valores de controle ($alpha$ e $beta$, variando de 0 a 1):
 
@@ -35,9 +35,9 @@ Os pesos do W foram definidos da seguinte forma:
 - **Interpolação de Cores:** Eu uso os mesmos passos calculados para a posição geométrica para definir a intensidade das cores RGB (Red, Green, Blue).
   - Nível de Vermelho = $w_1$
   - Nível de Verde = $w_2$
-  - Nível de Azul) = $w_3$
+  - Nível de Azul = $w_3$
 
-A instrução `glColor3f(peso_p1, peso_p2, peso_p3)` aplica essa mistura exata para cada ponto desenhado. Quanto mais perto o ponto estiver do vértice $p_1$, mais vermelho ele será, gerando o gradiente visualmente perfeito.
+A instrução `glColor3f(peso_p1, peso_p2, peso_p3)` aplica essa mistura exata para cada ponto desenhado. Quanto mais perto o ponto estiver do vértice $p_1$, mais vermelho ele será, e assim segue.
 
 ## 3. Estrutura Base e Gerenciamento de Janela (`main` e `init`)
 
